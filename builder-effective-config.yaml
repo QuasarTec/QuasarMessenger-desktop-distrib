@@ -1,0 +1,41 @@
+directories:
+  output: dist
+  buildResources: build
+appId: im.riot.app
+electronVersion: 10.1.6
+files:
+  - filter:
+      - package.json
+  - from: .hak/hakModules
+    to: node_modules
+  - filter:
+      - src/**
+      - webapp/**
+publish:
+  provider: github
+  repo: QuasarMessenger-desktop
+  owner: QuasarTec
+  private: true
+  token: <stripped sensitive data>
+extraResources:
+  - from: res/img
+    to: img
+linux:
+  target: deb
+  category: Network;InstantMessaging;Chat
+  maintainer: support@element.io
+  desktop:
+    StartupWMClass: element
+mac:
+  category: public.app-category.social-networking
+  darkModeSupport: true
+win:
+  target:
+    target: nsis
+  sign: scripts/electron_winSign
+afterPack: scripts/electron_afterPack
+afterSign: scripts/electron_afterSign
+protocols:
+  - name: element
+    schemes:
+      - element
