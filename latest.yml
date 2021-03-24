@@ -1,0 +1,8 @@
+version: 1.7.20
+files:
+  - url: Quasar-Setup-1.7.20.exe
+    sha512: KnhkXB2ewG/uyvUemJ3gTjJpAgZooKNU4StmAc9uiSp5dQMSfRBoeaCsGcJg3QMokwLwfBdYJHhXnDOakgc2uw==
+    size: 81775631
+path: Quasar-Setup-1.7.20.exe
+sha512: KnhkXB2ewG/uyvUemJ3gTjJpAgZooKNU4StmAc9uiSp5dQMSfRBoeaCsGcJg3QMokwLwfBdYJHhXnDOakgc2uw==
+releaseDate: '2021-03-24T13:31:52.535Z'
